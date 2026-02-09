@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>개인정보처리방침 | 🫧이미지 레시피</title>
+  <style>
+    body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans KR",Arial,sans-serif;line-height:1.7;margin:0;background:#fafafa;color:#111827}
+    .container{max-width:900px;margin:0 auto;padding:40px 20px}
+    .card{background:#fff;border:1px solid #e5e7eb;border-radius:18px;padding:28px;box-shadow:0 6px 20px rgba(0,0,0,0.04)}
+    h1{font-size:28px;margin:0 0 6px}
+    .meta{font-size:14px;color:#6b7280;margin-bottom:18px}
+    h2{margin-top:26px;font-size:18px;border-left:4px solid #a78bfa;padding-left:10px}
+    ul{padding-left:20px}
+    code{background:#f3f4f6;padding:2px 6px;border-radius:8px}
+    .notice{background:#f5f3ff;border:1px solid #ddd6fe;padding:14px 16px;border-radius:14px;margin:16px 0;color:#4c1d95}
+    a{color:#4f46e5}
+    .footer{margin-top:30px;font-size:13px;color:#6b7280;text-align:center}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h1>개인정보처리방침 (Privacy Policy)</h1>
+      <div class="meta">
+        시행일: <strong>2026-02-09</strong><br/>
+        서비스명: <strong>🫧이미지 레시피 - 직접 설계하는 내 이미지</strong><br/>
+        회사/퍼블리셔: <strong>s-b-lee</strong><br/>
+        문의: <strong>sargasght@gmail.com</strong>
+      </div>
+
+      <div class="notice">
+        본 개인정보처리방침은 “🫧이미지 레시피”(이하 “서비스”)가 이용자의 정보를 어떤 방식으로
+        수집·이용·보관·제공하는지 설명합니다.
+      </div>
+
+      <h2>1. 수집하는 정보</h2>
+      <h3>(1) 이용자가 직접 입력하는 정보</h3>
+      <ul>
+        <li>스타일 키워드 선택값(예: 세련됨, 우아함 등)</li>
+        <li>추가 정보 입력값(좋아하는 스타일/싫은 요소/현실 제약 등)</li>
+        <li>추구미 챗봇 대화 내용(사용자 질문/메시지)</li>
+      </ul>
+
+      <h3>(2) 이용자가 업로드하는 이미지(선택)</h3>
+      <ul>
+        <li>이용자가 이미지 분석 기능을 사용할 경우, 업로드 이미지가 분위기/스타일 분석 요청을 위해 처리될 수 있습니다.</li>
+      </ul>
+
+      <h3>(3) API 키/토큰(사용자 입력값)</h3>
+      <ul>
+        <li>OpenAI API Key</li>
+        <li>Pinterest Access Token(Bearer, OAuth 기반)</li>
+      </ul>
+      <p><strong>중요:</strong> 서비스는 Pinterest 계정 비밀번호를 수집하지 않습니다. Pinterest 기능은 Access Token으로만 동작합니다.</p>
+
+      <h2>2. 이용 목적</h2>
+      <ol>
+        <li>추구미 리포트/가이드 생성(OpenAI 텍스트 생성)</li>
+        <li>업로드 이미지 분위기 분석(선택, OpenAI 비전 요청)</li>
+        <li>Pinterest 참고 이미지(핀) 검색/표시(선택, Pinterest API 호출)</li>
+        <li>예시 코디 시각화 이미지 생성(선택, OpenAI 이미지 생성)</li>
+        <li>추구미 챗봇 응답 생성(OpenAI 텍스트 생성)</li>
+      </ol>
+
+      <h2>3. 보관 및 파기</h2>
+      <ul>
+        <li>서비스는 입력값/결과를 주로 앱 세션(Streamlit session_state)에서 표시하며, 초기화 또는 세션 종료 시 삭제될 수 있습니다.</li>
+        <li>Pinterest에서 조회된 핀 정보는 화면 표시 목적이며, 별도 데이터베이스에 영구 저장하지 않습니다(세션 캐시 수준).</li>
+      </ul>
+
+      <h2>4. 제3자 제공 및 처리위탁(외부 API)</h2>
+      <h3>(1) OpenAI</h3>
+      <ul>
+        <li>목적: 리포트/챗봇 응답 생성, 이미지 분석(선택), 코디 시각화(선택)</li>
+        <li>전송될 수 있는 정보: 사용자가 입력한 텍스트, 업로드 이미지(선택), 생성 프롬프트</li>
+      </ul>
+
+      <h3>(2) Pinterest</h3>
+      <ul>
+        <li>목적: 참고 이미지(핀) 검색/표시</li>
+        <li>전송될 수 있는 정보: 검색어(키워드 기반), Access Token</li>
+      </ul>
+
+      <h2>5. 이용자의 권리</h2>
+      <ul>
+        <li>입력/업로드 중단: 키/토큰 입력 및 이미지 업로드를 언제든지 중단할 수 있습니다.</li>
+        <li>세션 데이터 삭제: 앱 내 초기화 기능을 통해 세션에 저장된 정보를 삭제할 수 있습니다.</li>
+        <li>문의: 개인정보 관련 문의는 <a href="mailto:sargasght@gmail.com">sargasght@gmail.com</a> 으로 연락할 수 있습니다.</li>
+      </ul>
+
+      <h2>6. 보안</h2>
+      <ul>
+        <li>HTTPS 제공(배포 설정에 따라)</li>
+        <li>필요 최소 범위 내 정보 처리</li>
+        <li>키/토큰은 사용자 입력 기반이며 불필요한 노출을 최소화</li>
+      </ul>
+
+      <h2>7. 아동(만 13세 미만)</h2>
+      <p>서비스는 만 13세 미만 아동을 대상으로 설계되지 않았습니다.</p>
+
+      <h2>8. 정책 변경</h2>
+      <p>본 방침이 변경되는 경우, 페이지 업데이트로 안내합니다.</p>
+
+      <h2>9. 문의처</h2>
+      <ul>
+        <li>회사/퍼블리셔: s-b-lee</li>
+        <li>이메일: <a href="mailto:sargasght@gmail.com">sargasght@gmail.com</a></li>
+      </ul>
+
+      <div class="footer">© 2026 s-b-lee · 🫧이미지 레시피</div>
+    </div>
+  </div>
+</body>
+</html>
